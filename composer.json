@@ -1,46 +1,45 @@
 {
-    "name": "macrotom/screen-privacy",
-    "version": "1.0.0",
-    "description": "Prevent screenshots and screen recordings using native platform protections for NativePHP Mobile",
-    "type": "nativephp-plugin",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "MacroTom",
-            "email": "okeesieba@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^8.2",
-        "nativephp/mobile": "^2.0|^3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "MacroTom\\ScreenPrivacy\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "MacroTom\\ScreenPrivacy\\ScreenPrivacyServiceProvider"
-            ],
-            "aliases": {
-                "ScreenPrivacy": "MacroTom\\ScreenPrivacy\\Facades\\ScreenPrivacy"
-            }
-        },
-        "nativephp": {
-            "manifest": "nativephp.json"
-        }
-    },
-    "require-dev": {
-        "pestphp/pest": "^3.0|^4.0"
-    },
-    "scripts": {
-        "test": "pest"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
+  "name": "macrotom/screen-privacy",
+  "description": "Prevent screenshots and screen recordings using native platform protections for NativePHP Mobile",
+  "type": "nativephp-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MacroTom",
+      "email": "okeesieba@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^8.2",
+    "nativephp/mobile": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MacroTom\\ScreenPrivacy\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MacroTom\\ScreenPrivacy\\ScreenPrivacyServiceProvider"
+      ],
+      "aliases": {
+        "ScreenPrivacy": "MacroTom\\ScreenPrivacy\\Facades\\ScreenPrivacy"
+      }
+    },
+    "nativephp": {
+      "manifest": "nativephp.json"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.0|^4.0"
+  },
+  "scripts": {
+    "test": "pest"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }
