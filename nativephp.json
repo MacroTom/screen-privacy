@@ -1,5 +1,8 @@
 {
     "namespace": "ScreenPrivacy",
+    "keywords": ["screen", "privacy", "screenshot", "recording", "security"],
+    "category": "security",
+    "platforms": ["android", "ios"],
     "bridge_functions": [
         {
             "name": "ScreenPrivacy.Init",
