@@ -1,0 +1,54 @@
+{
+    "namespace": "ScreenPrivacy",
+    "bridge_functions": [
+        {
+            "name": "ScreenPrivacy.Init",
+            "android": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.Init",
+            "ios": "ScreenPrivacyFunctions.Init",
+            "description": "Initialize screen privacy"
+        },
+        {
+            "name": "ScreenPrivacy.Enable",
+            "android": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.Enable",
+            "ios": "ScreenPrivacyFunctions.Enable",
+            "description": "Enable screen privacy protection"
+        },
+        {
+            "name": "ScreenPrivacy.Disable",
+            "android": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.Disable",
+            "ios": "ScreenPrivacyFunctions.Disable",
+            "description": "Disable screen privacy protection"
+        },
+        {
+            "name": "ScreenPrivacy.IsEnabled",
+            "android": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.IsEnabled",
+            "ios": "ScreenPrivacyFunctions.IsEnabled",
+            "description": "Check if screen privacy is enabled"
+        },
+        {
+            "name": "ScreenPrivacy.IsRecording",
+            "android": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.IsRecording",
+            "ios": "ScreenPrivacyFunctions.IsRecording",
+            "description": "Check if the screen is being recorded"
+        }
+    ],
+    "assets": {
+        "android": [],
+        "ios": []
+    },
+    "android": {
+        "min_version": 26,
+        "permissions": [],
+        "init_function": "com.macrotom.screenprivacy.ScreenPrivacyFunctions.Init"
+    },
+    "ios": {
+        "min_version": "13.0",
+        "init_function": "ScreenPrivacyFunctions.setup"
+    },
+    "events": [
+        "MacroTom\\ScreenPrivacy\\Events\\ScreenCaptureDetected",
+        "MacroTom\\ScreenPrivacy\\Events\\ScreenRecordingDetected",
+        "MacroTom\\ScreenPrivacy\\Events\\ScreenPrivacyEnabled",
+        "MacroTom\\ScreenPrivacy\\Events\\ScreenPrivacyDisabled"
+    ]
+}
